@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zsy.appbarlayout.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bar_color"
+            android:minHeight="?attr/actionBarSize"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/ToolbarPopupTheme"
+            app:theme="@style/ToolBarTheme" />
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bar_color"
+            app:tabIndicatorColor="#fff"
+            app:tabSelectedTextColor="#fff"
+            app:tabTextAppearance="?android:attr/textAppearanceMedium"
+            app:tabTextColor="#d7d4d4" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_layout_two"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#fff"
+        app:layout_behavior="com.zsy.appbarlayout.BottomBehavior"
+        app:tabIndicatorColor="#00000000"
+        app:tabSelectedTextColor="#3b5abe"
+        app:tabTextColor="#484747" />
+</android.support.design.widget.CoordinatorLayout>
