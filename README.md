@@ -1,4 +1,4 @@
-## 使用AppBarLayout与CoordinatorLayout高仿稀土掘金
+## 使用AppBarLayout与CoordinatorLayout高仿掘金界面
 ###效果图
 ![](http://i.imgur.com/Ce6qBZs.gif)
 
